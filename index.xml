@@ -9,17 +9,17 @@
     
     <lastBuildDate>Wed, 04 Oct 2023 15:29:32 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>测试markdown样式</title>
+      <title>markdown样式测试</title>
       <link>/blog/2023/2023-11-4/</link>
       <pubDate>Wed, 04 Oct 2023 15:29:32 +0800</pubDate>
       
       <guid>/blog/2023/2023-11-4/</guid>
-      <description>1.</description>
+      <description>说明 # 测试markdown基本元素以及一些扩展语法能否正常显示</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/2023/2023-11-4/featured.jpg" />
     </item>
     
     <item>
-      <title>我的第一个博客</title>
+      <title>如何用GitHub Pages以及hugo建立个人博客</title>
       <link>/blog/2023/my-first-post/</link>
       <pubDate>Tue, 03 Oct 2023 15:29:32 +0800</pubDate>
       
@@ -34,7 +34,17 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>About Me # 小綿尾巴是网名，你也可以叫我小绵或 Mia。 我从 2022-07 开始写博客，第一篇博客是 独立博客过时后，为什么开始写博客了？ 学习日语中，目前已通过 N2，正在为了去东京工作而努力。 我关心前端技术、UI/UX 设计、生产力工具、书籍、女性主义、个人成长、亲密关系、数字生活和一切让人觉得美好的事物。 About Site # 本站生日：2022-08-30 使用 Hugo 搭建，部署在 GitHub Pages 上： 如何用 GitHub Pages + Hugo 搭建个人博客 Now 页面的灵感来自 Derek Sivers Don&amp;rsquo;t be shy, let&amp;rsquo;s connect!</description>
+      <description>About Me # 我从 2023-11 开始写博客，第一篇博客是 我的第一篇博客 在校摸鱼大学生 About Site # 本站生日：2023-11-4 使用 Hugo 搭建，部署在 GitHub Pages 上，详细参考： 如何用 GitHub Pages + Hugo 搭建个人博客 Now 页面的灵感来自 Derek Sivers Don&amp;rsquo;t be shy, let&amp;rsquo;s connect!</description>
+      
+    </item>
+    
+    <item>
+      <title>Now</title>
+      <link>/now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/now/</guid>
+      <description>TODO # 明天再写（逃</description>
       
     </item>
     

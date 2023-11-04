@@ -30,8 +30,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.39d1a2be9e1e3c35bc8b7e5212c837f6bede7de2ec28a58e65aaa7381216dbe866352830a8696b55bdc26a51efa18730d5595b291b0543edd6872bec5a0917e4.css"
-    integrity="sha512-OdGivp4ePDW8i35SEsg39r7efeLsKKWOZaqnOBIW2&#43;hmNSgwqGlrVb3CalHvoYcw1VlbKRsFQ&#43;3WhyvsWgkX5A==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.5ceca8ec4dd86cae431a8c78fb9fbf6ca4d95f9df2c5a6da19d320c98164fcf40e040170df8548f9fdbfcbf7e3065efa57c4696e637c58bbb5a2569cccf9c821.css"
+    integrity="sha512-XOyo7E3YbK5DGox4&#43;5&#43;/bKTZX53yxabaGdMgyYFk/PQOBAFw34VI&#43;f2/y/fjBl76V8RpbmN8WLu1olaczPnIIQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -123,6 +123,29 @@
   <meta name="theme-color"/>
   
   
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDYfLGyPOjgEoRwzFCqS36NSWlkd6-C740",
+      authDomain: "AIzaSyDYfLGyPOjgEoRwzFCqS36NSWlkd6-C740",
+      projectId: "myblog-c0e27",
+      storageBucket: "myblog-c0e27.appspot.com",
+      messagingSenderId: "966815772716",
+      appId: "1:966815772716:web:8f5126123568c7edd06189",
+      measurementId: "G-HK39NHTR6C"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
+  
+  
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
@@ -184,9 +207,9 @@
 
             
             
-  <a href=""  class="flex items-center">
+  <a href="/now/"  class="flex items-center">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Now">
         Now
     </p>
 </a>
@@ -366,9 +389,9 @@
 
                     
   <li class="mt-1">
-    <a href=""  class="flex items-center">
+    <a href="/now/"  class="flex items-center">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Now">
             Now
         </p>
     </a>
@@ -403,6 +426,16 @@
 
 
 
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
 
 
   </div>
@@ -520,7 +553,7 @@
       <div class="items-center text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/blog/2023/2023-11-4/">测试markdown样式</div>
+          href="/blog/2023/2023-11-4/">markdown样式测试</div>
         
         
         
@@ -563,7 +596,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-10-04 15:29:32 &#43;0800 CST">2023-10-04</time><span class="px-2 text-primary-500">&middot;</span><span>173 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2023-10-04 15:29:32 &#43;0800 CST">2023-10-04</time><span class="px-2 text-primary-500">&middot;</span><span>117 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -613,7 +646,7 @@
       <div class="items-center text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/blog/2023/my-first-post/">我的第一个博客</div>
+          href="/blog/2023/my-first-post/">如何用GitHub Pages以及hugo建立个人博客</div>
         
         
         
@@ -656,7 +689,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-10-03 15:29:32 &#43;0800 CST">2023-10-03</time><span class="px-2 text-primary-500">&middot;</span><span>24 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2023-10-03 15:29:32 &#43;0800 CST">2023-10-03</time><span class="px-2 text-primary-500">&middot;</span><span>25 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   

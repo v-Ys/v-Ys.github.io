@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>我的第一个博客 &middot; 松TvT</title>
-  <meta name="title" content="我的第一个博客 &middot; 松TvT" />
+  <title>如何用GitHub Pages以及hugo建立个人博客 &middot; 松TvT</title>
+  <meta name="title" content="如何用GitHub Pages以及hugo建立个人博客 &middot; 松TvT" />
   
   <meta name="description" content="松TvT的博客" />
   <meta name="keywords" content="html, css, " />
@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.39d1a2be9e1e3c35bc8b7e5212c837f6bede7de2ec28a58e65aaa7381216dbe866352830a8696b55bdc26a51efa18730d5595b291b0543edd6872bec5a0917e4.css"
-    integrity="sha512-OdGivp4ePDW8i35SEsg39r7efeLsKKWOZaqnOBIW2&#43;hmNSgwqGlrVb3CalHvoYcw1VlbKRsFQ&#43;3WhyvsWgkX5A==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.5ceca8ec4dd86cae431a8c78fb9fbf6ca4d95f9df2c5a6da19d320c98164fcf40e040170df8548f9fdbfcbf7e3065efa57c4696e637c58bbb5a2569cccf9c821.css"
+    integrity="sha512-XOyo7E3YbK5DGox4&#43;5&#43;/bKTZX53yxabaGdMgyYFk/PQOBAFw34VI&#43;f2/y/fjBl76V8RpbmN8WLu1olaczPnIIQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -63,7 +63,7 @@
   
   
   
-  <meta property="og:title" content="我的第一个博客" />
+  <meta property="og:title" content="如何用GitHub Pages以及hugo建立个人博客" />
 <meta property="og:description" content="1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/2023/my-first-post/" /><meta property="og:image" content="/blog/2023/my-first-post/featured.jpg"/><meta property="article:section" content="blog" />
@@ -73,7 +73,7 @@
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/blog/2023/my-first-post/featured.jpg"/>
-<meta name="twitter:title" content="我的第一个博客"/>
+<meta name="twitter:title" content="如何用GitHub Pages以及hugo建立个人博客"/>
 <meta name="twitter:description" content="1."/>
 
   
@@ -82,8 +82,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Blog",
-    "name": "我的第一个博客",
-    "headline": "我的第一个博客",
+    "name": "如何用GitHub Pages以及hugo建立个人博客",
+    "headline": "如何用GitHub Pages以及hugo建立个人博客",
     
     "abstract": "1.",
     "inLanguage": "zh-cn",
@@ -101,7 +101,7 @@
     "keywords": ["html","css"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "24"
+    "wordCount": "25"
   }]
   </script>
 
@@ -149,6 +149,29 @@
   
   
   <meta name="theme-color"/>
+  
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDYfLGyPOjgEoRwzFCqS36NSWlkd6-C740",
+      authDomain: "AIzaSyDYfLGyPOjgEoRwzFCqS36NSWlkd6-C740",
+      projectId: "myblog-c0e27",
+      storageBucket: "myblog-c0e27.appspot.com",
+      messagingSenderId: "966815772716",
+      appId: "1:966815772716:web:8f5126123568c7edd06189",
+      measurementId: "G-HK39NHTR6C"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
   
   
 </head>
@@ -212,9 +235,9 @@
 
             
             
-  <a href=""  class="flex items-center">
+  <a href="/now/"  class="flex items-center">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Now">
         Now
     </p>
 </a>
@@ -394,9 +417,9 @@
 
                     
   <li class="mt-1">
-    <a href=""  class="flex items-center">
+    <a href="/now/"  class="flex items-center">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Now">
             Now
         </p>
     </a>
@@ -432,6 +455,16 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
 
   </div>
 </div>
@@ -457,7 +490,7 @@
   
   
         
-        <img class="w-full rounded-lg single_hero_round nozoom" alt="我的第一个博客" width="7016" height="4960" src="/blog/2023/my-first-post/featured.jpg">
+        <img class="w-full rounded-lg single_hero_round nozoom" alt="如何用GitHub Pages以及hugo建立个人博客" width="3986" height="2214" src="/blog/2023/my-first-post/featured.jpg">
         
     
   
@@ -466,7 +499,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      我的第一个博客
+      如何用GitHub Pages以及hugo建立个人博客
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -509,7 +542,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-10-03 15:29:32 &#43;0800 CST">2023-10-03</time><span class="px-2 text-primary-500">&middot;</span><span>24 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2023-10-03 15:29:32 &#43;0800 CST">2023-10-03</time><span class="px-2 text-primary-500">&middot;</span><span>25 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -647,16 +680,10 @@
             style="text-decoration-line: none !important;" href="#1-%e5%89%8d%e8%a8%80" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>在开始做这个项目前，我通过文档复习了一遍 HTML 和 CSS，我的 JavaSciript 基础薄弱，虽然跟着教程把代码敲下来了，但其中使用到的很多语句，我都需要搜索资源学习一遍，虽然遇到了阻碍，但还是通过这个项目学到了很多。</p>
-<p>我在这个项目中最大的收获是接触媒体查询在实际项目中最佳的应用，也了解了一个不用任何前端框架的网站该有的文件结构。对于一个刚学过前端基础，不会任何框架，还没有真正实操过的新手来说，这个练习的帮助非常大。所以决定写一篇博客记录我到底学到了什么。</p>
-<p>创建这个网站的过程中使用到的基本工具有 <a href="https://nodejs.org/en"   target="_blank">
-    Node.js</a>、 <a href="https://git-scm.com/"   target="_blank">
-    Git</a>、 <a href="https://vitejs.dev/"   target="_blank">
-    Vite</a>。其实就是需要安装这些工具，再使用一些它们提供的简单的命令。</p>
-<p>这里是<a href="https://mia-portfolio-website-practice.vercel.app/"   target="_blank">
-    网站 Demo</a>，<a href="https://github.com/miawithcode/building-portfolio-website"   target="_blank">
-    源代码</a> 和<a href="https://youtu.be/dLDn_k8GmaU?si=qF_sc1m7io16S7cS"   target="_blank">
-    原视频教程</a>。</p>
+<p>不折腾会死星人，花了一个周末搭了一个简单的个人博客，用hugo生成静态网页，利用Github Pages部署；
+过程很顺利，没有什么大坑，详细可以参考这个教程<a href="https://cuttontail.blog/blog/create-a-wesite-using-github-pages-and-hugo/"   target="_blank">
+    如何用 GitHub Pages + Hugo 搭建个人博客</a></p>
+<p>前置需求：Git基本用法、一个GitHub账号、Google账号（如果需要配置firebase）、一点点前端知识（不会也没关系，但如果你想自己做美化会比较麻烦）</p>
 <hr>
 <div id="2-工具资源" class="anchor"></div>
 <h2 class="relative group">2. 工具资源 
@@ -666,7 +693,21 @@
             style="text-decoration-line: none !important;" href="#2-%e5%b7%a5%e5%85%b7%e8%b5%84%e6%ba%90" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>我还从这个项目中获悉了一些没用过的资源，这里也做一下记录。</p>
+<p>以下是搭建博客中参考到的教程和资源</p>
+<ol>
+<li><a href="https://www.cnblogs.com/chenxuhua/p/hugo-blog-chinese-user-guide.html"   target="_blank">
+    hugo基本用法</a></li>
+<li><a href="https://n9o.xyz/posts/202310-blowfish-tutorial/#firebase-hosting-mergeyml"   target="_blank">
+    firebase</a>部署，可以提供一些交互性功能</li>
+<li><a href="http://zhongguose.com/#anyuzi"   target="_blank">
+    配色参考</a>,一个中国风配色网站</li>
+<li>博客主题<a href="https://blowfish.page/"   target="_blank">
+    Blowfish</a>，PC端、移动端适配的都比较好，自定义也很方便</li>
+<li><a href="https://io-oi.me/tech/custom-domains-on-github-pages/"   target="_blank">
+    Godaddy域名绑定以及配置DNS</a>，Godaddy支持支付宝付款，也可以在阿里云购买（需实名）</li>
+<li>生成不同分辨率的<a href="https://ibrights.github.io/post/blog20210527/"   target="_blank">
+    网站图标</a></li>
+</ol>
 
         </div>
                 
@@ -705,7 +746,7 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >测试markdown样式</span
+                  >markdown样式测试</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   

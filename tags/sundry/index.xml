@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sundry on 松TvT</title>
+    <link>/tags/sundry/</link>
+    <description>Recent content in sundry on 松TvT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+    <lastBuildDate>Wed, 04 Oct 2023 15:29:32 +0800</lastBuildDate><atom:link href="/tags/sundry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markdown样式测试</title>
+      <link>/blog/2023/2023-11-4/</link>
+      <pubDate>Wed, 04 Oct 2023 15:29:32 +0800</pubDate>
+      
+      <guid>/blog/2023/2023-11-4/</guid>
+      <description>说明 # 测试markdown基本元素以及一些扩展语法能否正常显示</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/2023/2023-11-4/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
