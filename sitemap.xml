@@ -4,7 +4,7 @@
 
   <url>
     <loc>/blog/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -16,19 +16,19 @@
   </url>
   <url>
     <loc>/tags/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blog/2023/my-first-post/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <loc>/blog/2023/%E5%8D%9A%E5%AE%A2-hugo-gihubpages/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
