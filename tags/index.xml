@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-    <lastBuildDate>Wed, 04 Oct 2023 15:29:32 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Nov 2023 23:48:11 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PTA</title>
+      <link>/tags/pta/</link>
+      <pubDate>Mon, 06 Nov 2023 23:48:11 +0800</pubDate>
+      
+      <guid>/tags/pta/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>算法</title>
+      <link>/tags/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 06 Nov 2023 23:48:11 +0800</pubDate>
+      
+      <guid>/tags/%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>sundry</title>
       <link>/tags/sundry/</link>
