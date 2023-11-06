@@ -10,12 +10,12 @@
     <lastBuildDate>Wed, 04 Oct 2023 11:29:32 +0800</lastBuildDate><atom:link href="/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何用GitHub Pages &#43; hugo搭建个人博客</title>
-      <link>/blog/2023/%E5%8D%9A%E5%AE%A2-hugo-gihubpages/</link>
+      <link>/blog/2023/my-first-post/</link>
       <pubDate>Wed, 04 Oct 2023 11:29:32 +0800</pubDate>
       
-      <guid>/blog/2023/%E5%8D%9A%E5%AE%A2-hugo-gihubpages/</guid>
+      <guid>/blog/2023/my-first-post/</guid>
       <description>如何用GitHub Pages + hugo搭建个人博客</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/2023/%E5%8D%9A%E5%AE%A2-hugo-gihubpages/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/2023/my-first-post/featured.jpg" />
     </item>
     
   </channel>
