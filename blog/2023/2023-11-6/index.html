@@ -998,11 +998,11 @@
 </li>
 </ol>
 <p>示例：</p>
-<pre tabindex="0"><code class="language-other" data-lang="other">char source[] = &#34;Hello, World!&#34;;
-char* duplicate = strdup(source);
-// 使用 duplicate
-free(duplicate); // 释放内存，以避免内存泄漏
-</code></pre><p>总结：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">source</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;Hello, World!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span><span class="o">*</span> <span class="n">duplicate</span> <span class="o">=</span> <span class="nf">strdup</span><span class="p">(</span><span class="n">source</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 使用 duplicate
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nf">free</span><span class="p">(</span><span class="n">duplicate</span><span class="p">);</span> <span class="c1">// 释放内存，以避免内存泄漏
+</span></span></span></code></pre></div><p>总结：</p>
 <ul>
 <li><code>strcpy</code> 用于在已分配的内存中复制字符串，需要手动分配目标数组的内存和确保足够大。</li>
 <li><code>strdup</code> 用于复制字符串并动态分配内存，更方便，但需要手动释放内存以避免内存泄漏。</li>
@@ -1015,8 +1015,8 @@ free(duplicate); // 释放内存，以避免内存泄漏
             style="text-decoration-line: none !important;" href="#1008-%e6%95%b0%e7%bb%84%e5%85%83%e7%b4%a0%e5%be%aa%e7%8e%af%e5%8f%b3%e7%a7%bb%e9%97%ae%e9%a2%98" aria-label="Anchor">#</a></span>        
     
 </h2>
-<p>注意\(M\) 可能会大于\(N\)，即\(M=kN+a\)，\(M\)中大于\(N\)的\(kN\)部分，只是循环，并无意义，
-另\(M \equiv M \mod N\)即可，接下来只要从数组的第\(M\)项存第一个数，\(n - m\)项之后开始在数组的第一位存数字</p>
+<p>注意\(M\) 可能会大于\(N\)，即\(M=kN+a\)，\(M\)中大于\(N\)的\(kN\)部分只是循环，并无意义，
+令\(M \equiv M \mod N\)即可，接下来只要从数组的第\(M\)项存第一个数，\(n - m\)项之后开始在数组的第一位存数字</p>
 <ul>
 <li>c 语言版</li>
 </ul>
