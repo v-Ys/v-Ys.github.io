@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.b86e5c5e05060d88363c4a27af4a577651d82736026647e4ac4dd46713cf85290e3b4a335d9a519b804902954d7c36f1bde8680fbb1ff889985ae200703dc956.css"
-    integrity="sha512-uG5cXgUGDYg2PEonr0pXdlHYJzYCZkfkrE3UZxPPhSkOO0ozXZpRm4BJApVNfDbxvehoD7sf&#43;ImYWuIAcD3JVg==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.9a50cdd0723b863a61f2b1438ed28664a7c62a392423546188a942fb0e55a7a8290f4aed094092db3dbfda558305e2eda9f33ca6a04326feae0d2ec406f0064b.css"
+    integrity="sha512-mlDN0HI7hjph8rFDjtKGZKfGKjkkI1RhiKlC&#43;w5Vp6gpD0rtCUCS2z2/2lWDBeLtqfM8pqBDJv6uDS7EBvAGSw==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -101,7 +101,7 @@
     "keywords": ["PTA","算法"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "202"
+    "wordCount": "356"
   }]
   </script>
 
@@ -681,7 +681,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-06 23:48:11 &#43;0800 CST">2023-11-06</time><span class="px-2 text-primary-500">&middot;</span><span>202 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-06 23:48:11 &#43;0800 CST">2023-11-06</time><span class="px-2 text-primary-500">&middot;</span><span>356 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_blog/2023/2023-11-6/index.md" title="views">0</span> 
     
@@ -862,6 +862,8 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#验证是否素数">验证是否素数</a></li>
+    <li><a href="#strcpy-和-strdup-基本用法">strcpy 和 strdup 基本用法</a></li>
     <li><a href="#1008-数组元素循环右移问题">1008 数组元素循环右移问题</a></li>
   </ul>
 </nav>
@@ -876,6 +878,8 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#验证是否素数">验证是否素数</a></li>
+    <li><a href="#strcpy-和-strdup-基本用法">strcpy 和 strdup 基本用法</a></li>
     <li><a href="#1008-数组元素循环右移问题">1008 数组元素循环右移问题</a></li>
   </ul>
 </nav>
@@ -935,6 +939,74 @@
         <div class="max-w-prose mb-20">
           
 
+<div id="验证是否素数" class="anchor"></div>
+<h2 class="relative group">验证是否素数 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e9%aa%8c%e8%af%81%e6%98%af%e5%90%a6%e7%b4%a0%e6%95%b0" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>先验证\(1、2、3\)，且\(6=2*3\)，接下来只需验证\(6n-1\)与\(6n+1\)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">is_prime</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">n</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div id="strcpy-和-strdup-基本用法" class="anchor"></div>
+<h2 class="relative group">strcpy 和 strdup 基本用法 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#strcpy-%e5%92%8c-strdup-%e5%9f%ba%e6%9c%ac%e7%94%a8%e6%b3%95" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p><code>strcpy</code> 和 <code>strdup</code> 都是用于处理字符串的 C 函数，它们的功能相似，但用法略有不同。</p>
+<ol>
+<li><code>strcpy</code>（String Copy）:
+<ul>
+<li><code>strcpy</code> 用于将一个字符串（字符数组）的内容复制到另一个字符数组中。</li>
+<li>它的原型为 <code>char* strcpy(char* dest, const char* src)</code>。</li>
+<li><code>dest</code> 是目标字符串，<code>src</code> 是源字符串。</li>
+<li><code>strcpy</code> 将 <code>src</code> 的内容复制到 <code>dest</code> 中，直到遇到空字符 <code>'\0'</code> 为止。</li>
+<li>注意：<code>strcpy</code> 不会检查目标数组是否足够大来容纳源字符串的内容，这可能导致缓冲区溢出。因此，在使用 <code>strcpy</code> 时，必须确保目标数组足够大，以免发生溢出。</li>
+</ul>
+</li>
+</ol>
+<p>示例：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">source</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;Hello, World!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">destination</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nf">strcpy</span><span class="p">(</span><span class="n">destination</span><span class="p">,</span> <span class="n">source</span><span class="p">);</span>
+</span></span></code></pre></div><ol start="2">
+<li><code>strdup</code>（String Duplicate）:
+<ul>
+<li><code>strdup</code> 用于复制一个字符串，并为新字符串分配足够的内存空间。</li>
+<li><code>strdup</code> 并不是标准 C 函数，但它是一种常见的库函数，通常在 POSIX 环境中可用。</li>
+<li><code>strdup</code> 的原型通常为 <code>char* strdup(const char* str)</code>。</li>
+<li>它接受一个源字符串 <code>str</code>，并动态分配足够的内存来存储它，并将其内容复制到新分配的内存中。</li>
+<li>返回值是指向新字符串的指针，你需要负责在使用后释放这个内存，通常使用 <code>free</code> 函数。</li>
+</ul>
+</li>
+</ol>
+<p>示例：</p>
+<pre tabindex="0"><code class="language-other" data-lang="other">char source[] = &#34;Hello, World!&#34;;
+char* duplicate = strdup(source);
+// 使用 duplicate
+free(duplicate); // 释放内存，以避免内存泄漏
+</code></pre><p>总结：</p>
+<ul>
+<li><code>strcpy</code> 用于在已分配的内存中复制字符串，需要手动分配目标数组的内存和确保足够大。</li>
+<li><code>strdup</code> 用于复制字符串并动态分配内存，更方便，但需要手动释放内存以避免内存泄漏。</li>
+</ul>
 <div id="1008-数组元素循环右移问题" class="anchor"></div>
 <h2 class="relative group">1008 数组元素循环右移问题 
     <span
