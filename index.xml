@@ -10,32 +10,32 @@
     <lastBuildDate>Mon, 06 Nov 2023 23:48:11 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PTA 乙级1-20</title>
-      <link>/blog/2023/2023-11-6/</link>
+      <link>/blog/PTA-1-20/</link>
       <pubDate>Mon, 06 Nov 2023 23:48:11 +0800</pubDate>
       
-      <guid>/blog/2023/2023-11-6/</guid>
+      <guid>/blog/PTA-1-20/</guid>
       <description>PTA 乙级1-20题</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/2023/2023-11-6/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/PTA-1-20/featured.png" />
     </item>
     
     <item>
       <title>markdown样式测试</title>
-      <link>/blog/2023/2023-11-4/</link>
+      <link>/blog/markdown-style/</link>
       <pubDate>Wed, 04 Oct 2023 15:29:32 +0800</pubDate>
       
-      <guid>/blog/2023/2023-11-4/</guid>
-      <description>说明 # 测试markdown基本元素以及一些扩展语法能否正常显示</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/2023/2023-11-4/featured.jpg" />
+      <guid>/blog/markdown-style/</guid>
+      <description>markdown-style-test</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/markdown-style/featured.jpg" />
     </item>
     
     <item>
       <title>如何用GitHub Pages &#43; hugo搭建个人博客</title>
-      <link>/blog/2023/create-a-wesite-using-githubpages-and-hugo/</link>
+      <link>/blog/create-a-wesite-using-githubpages-and-hugo/</link>
       <pubDate>Wed, 04 Oct 2023 11:29:32 +0800</pubDate>
       
-      <guid>/blog/2023/create-a-wesite-using-githubpages-and-hugo/</guid>
+      <guid>/blog/create-a-wesite-using-githubpages-and-hugo/</guid>
       <description>如何用GitHub Pages + hugo搭建个人博客</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/2023/create-a-wesite-using-githubpages-and-hugo/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/create-a-wesite-using-githubpages-and-hugo/featured.jpg" />
     </item>
     
     <item>

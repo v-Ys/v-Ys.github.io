@@ -4,36 +4,36 @@
 
   <url>
     <loc>/blog/</loc>
-    <lastmod>2023-11-06T23:48:11+08:00</lastmod>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blog/2023/2023-11-6/</loc>
+    <loc>/blog/PTA-1-20/</loc>
     <lastmod>2023-11-06T23:48:11+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>/tags/</loc>
-    <lastmod>2023-11-06T23:48:11+08:00</lastmod>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>/</loc>
-    <lastmod>2023-11-06T23:48:11+08:00</lastmod>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blog/2023/2023-11-4/</loc>
-    <lastmod>2023-10-04T15:29:32+08:00</lastmod>
+    <loc>/blog/markdown-style/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/blog/2023/create-a-wesite-using-githubpages-and-hugo/</loc>
+    <loc>/blog/create-a-wesite-using-githubpages-and-hugo/</loc>
     <lastmod>2023-11-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
