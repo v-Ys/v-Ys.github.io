@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>PTA 乙级1-20 &middot; 松TvT</title>
-  <meta name="title" content="PTA 乙级1-20 &middot; 松TvT" />
+  <title>使用Makefile实现自动发布Hugo博客 &middot; 松TvT</title>
+  <meta name="title" content="使用Makefile实现自动发布Hugo博客 &middot; 松TvT" />
   
-  <meta name="description" content="PTA 乙级1-20题" />
-  <meta name="keywords" content="PTA, 算法, " />
+  <meta name="description" content="auto push hugo blog use make" />
+  <meta name="keywords" content="make, " />
   
   
-  <link rel="canonical" href="/blog/PTA-1-20/" />
+  <link rel="canonical" href="/blog/makefile-hugoblog/" />
   
   
   
@@ -63,18 +63,18 @@
   
   
   
-  <meta property="og:title" content="PTA 乙级1-20" />
-<meta property="og:description" content="PTA 乙级1-20题" />
+  <meta property="og:title" content="使用Makefile实现自动发布Hugo博客" />
+<meta property="og:description" content="auto push hugo blog use make" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/PTA-1-20/" /><meta property="og:image" content="/blog/PTA-1-20/featured.jpg"/><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-11-06T23:48:11+08:00" />
-<meta property="article:modified_time" content="2023-11-06T23:48:11+08:00" />
+<meta property="og:url" content="/blog/makefile-hugoblog/" /><meta property="og:image" content="/blog/makefile-hugoblog/featured.jpeg"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-11-29T22:16:57+08:00" />
+<meta property="article:modified_time" content="2023-11-29T22:16:57+08:00" />
 
 
   <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="/blog/PTA-1-20/featured.jpg"/>
-<meta name="twitter:title" content="PTA 乙级1-20"/>
-<meta name="twitter:description" content="PTA 乙级1-20题"/>
+<meta name="twitter:image" content="/blog/makefile-hugoblog/featured.jpeg"/>
+<meta name="twitter:title" content="使用Makefile实现自动发布Hugo博客"/>
+<meta name="twitter:description" content="auto push hugo blog use make"/>
 
   
   <script type="application/ld+json">
@@ -82,26 +82,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Blog",
-    "name": "PTA 乙级1-20",
-    "headline": "PTA 乙级1-20",
-    "description": "PTA 乙级1-20题",
-    "abstract": "PTA 乙级1-20题",
+    "name": "使用Makefile实现自动发布Hugo博客",
+    "headline": "使用Makefile实现自动发布Hugo博客",
+    "description": "auto push hugo blog use make",
+    "abstract": "auto push hugo blog use make",
     "inLanguage": "zh-cn",
-    "url" : "\/blog\/PTA-1-20\/",
+    "url" : "\/blog\/makefile-hugoblog\/",
     "author" : {
       "@type": "Person",
       "name": "松TvT"
     },
     "copyrightYear": "2023",
-    "dateCreated": "2023-11-06T23:48:11\u002b08:00",
-    "datePublished": "2023-11-06T23:48:11\u002b08:00",
+    "dateCreated": "2023-11-29T22:16:57\u002b08:00",
+    "datePublished": "2023-11-29T22:16:57\u002b08:00",
     
-    "dateModified": "2023-11-06T23:48:11\u002b08:00",
+    "dateModified": "2023-11-29T22:16:57\u002b08:00",
     
-    "keywords": ["-PTA-PAT-算法"],
+    "keywords": ["blog-makefile-autopush-hugo"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "356"
+    "wordCount": "113"
   }]
   </script>
 
@@ -125,139 +125,6 @@
   
 
 <script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
-
-
-
-
-
-
-
-
-
-
-
-<link type="text/css" rel="stylesheet" href="/lib/katex/katex.min.7c7c1a59e6eec00ecd485e5083f69fe14783c7d5ea52962938682e6e8df25aef9bd88411e14790c1b6f8d938bb81502336d56823f23d4c4a187aef689b0702ea.css" integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu&#43;b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" />
-
-
-<script defer src="/lib/katex/katex.min.2d037120c479ad7bfba3e6f597cf8dd4464c7e11bb88567d1e19db2644e9e338cdaf95afb2def902a51e143c5e4546bb979bc40f2522022a7ffebf8414b2c2c8.js" integrity="sha512-LQNxIMR5rXv7o&#43;b1l8&#43;N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r&#43;EFLLCyA=="></script>
-
-
-<script defer src="/lib/katex/auto-render.min.8968ae052e67b7aafad1f0b3dba35dd19a9ed276e4d594c841b9772afee462c5fec8a314147ce3687dbe02733abe9d97b3e80d99a0405562634a6b8fc3be847e.js" integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX&#43;yKMUFHzjaH2&#43;AnM6vp2Xs&#43;gNmaBAVWJjSmuPw76Efg=="
-  onload="renderMathInElement(document.body);"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -623,7 +490,7 @@
   
   
         
-        <img class="w-full rounded-lg single_hero_round nozoom" alt="PTA 乙级1-20" width="4032" height="2046" src="/blog/PTA-1-20/featured.jpg">
+        <img class="w-full rounded-lg single_hero_round nozoom" alt="使用Makefile实现自动发布Hugo博客" width="2774" height="1861" src="/blog/makefile-hugoblog/featured.jpeg">
         
     
   
@@ -632,7 +499,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      PTA 乙级1-20
+      使用Makefile实现自动发布Hugo博客
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -681,9 +548,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-06 23:48:11 &#43;0800 CST">2023-11-06</time><span class="px-2 text-primary-500">&middot;</span><span>356 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-29 22:16:57 &#43;0800 CST">2023-11-29</time><span class="px-2 text-primary-500">&middot;</span><span>113 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_blog/2023/2023-11-6/index.md" title="views">0</span> 
+    <span id="views_blog/2023/2023-11-29/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -695,7 +562,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_blog/2023/2023-11-6/index.md" title="likes">0</span> 
+    <span id="likes_blog/2023/2023-11-29/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -862,9 +729,8 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#验证是否素数">验证是否素数</a></li>
-    <li><a href="#strcpy-和-strdup-基本用法">strcpy 和 strdup 基本用法</a></li>
-    <li><a href="#1008-数组元素循环右移问题">1008 数组元素循环右移问题</a></li>
+    <li><a href="#配置使用">配置使用</a></li>
+    <li><a href="#代码实现">代码实现</a></li>
   </ul>
 </nav>
   </div>
@@ -878,9 +744,8 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#验证是否素数">验证是否素数</a></li>
-    <li><a href="#strcpy-和-strdup-基本用法">strcpy 和 strdup 基本用法</a></li>
-    <li><a href="#1008-数组元素循环右移问题">1008 数组元素循环右移问题</a></li>
+    <li><a href="#配置使用">配置使用</a></li>
+    <li><a href="#代码实现">代码实现</a></li>
   </ul>
 </nav>
   </div>
@@ -937,147 +802,47 @@
 
 
         <div class="max-w-prose mb-20">
-          
-
-<div id="验证是否素数" class="anchor"></div>
-<h2 class="relative group">验证是否素数 
+          <div id="配置使用" class="anchor"></div>
+<h2 class="relative group">配置使用 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e9%aa%8c%e8%af%81%e6%98%af%e5%90%a6%e7%b4%a0%e6%95%b0" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e9%85%8d%e7%bd%ae%e4%bd%bf%e7%94%a8" aria-label="Anchor">#</a></span>        
     
 </h2>
-<p>先验证\(1、2、3\)，且\(6=2*3\)，接下来只需验证\(6n-1\)与\(6n+1\)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">is_prime</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<p>在你的 bolg 仓库下新建一个 Makefile 文件，拷贝下面的代码进去，每次写完在 blog 仓库下执行make就行，（make 一般都预装的吧，应该不需要额外安装:）
+优点方便快捷，一键发布；缺点也很明显，不能自己控制 commit 信息，但大多数时候都不需要给博客加什么commit信息吧，需要的时候手动 git add/git commit 即可</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-makefile" data-lang="makefile"><span class="line"><span class="cl"><span class="nv">MSG</span> <span class="o">:=</span> <span class="s2">&#34;BLOG_TIME:&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">MSG</span> <span class="o">+=</span> <span class="k">$(</span>shell date<span class="k">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">6</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">n</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div id="strcpy-和-strdup-基本用法" class="anchor"></div>
-<h2 class="relative group">strcpy 和 strdup 基本用法 
+</span></span><span class="line"><span class="cl"><span class="nf">all</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	@hugo <span class="o">&amp;&amp;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">if</span> git add --all <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&#34;</span><span class="k">$(</span>MSG<span class="k">)</span><span class="s2">&#34;</span><span class="p">;</span> <span class="k">then</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		git push <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;\033[32mBlog Repo Success!\033[0m&#34;</span><span class="p">;</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">else</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nb">echo</span> <span class="s2">&#34;\033[31mNothing need commit in Blog Repo\033[0m&#34;</span><span class="p">;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl">	@cd ./public/ <span class="o">&amp;&amp;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">if</span> git add --all <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&#34;</span><span class="k">$(</span>MSG<span class="k">)</span><span class="s2">&#34;</span><span class="p">;</span> <span class="k">then</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		git push <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;\033[32mPublic Repo Success!\033[0m&#34;</span><span class="p">;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">else</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>		<span class="nb">echo</span> <span class="s2">&#34;\033[31mNothing need commit in Public Repo\033[0m&#34;</span><span class="p">;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">all</span>
+</span></span></code></pre></div><div id="代码实现" class="anchor"></div>
+<h2 class="relative group">代码实现 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#strcpy-%e5%92%8c-strdup-%e5%9f%ba%e6%9c%ac%e7%94%a8%e6%b3%95" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e4%bb%a3%e7%a0%81%e5%ae%9e%e7%8e%b0" aria-label="Anchor">#</a></span>        
     
 </h2>
-<p><code>strcpy</code> 和 <code>strdup</code> 都是用于处理字符串的 C 函数，它们的功能相似，但用法略有不同。</p>
-<ol>
-<li><code>strcpy</code>（String Copy）:
-<ul>
-<li><code>strcpy</code> 用于将一个字符串（字符数组）的内容复制到另一个字符数组中。</li>
-<li>它的原型为 <code>char* strcpy(char* dest, const char* src)</code>。</li>
-<li><code>dest</code> 是目标字符串，<code>src</code> 是源字符串。</li>
-<li><code>strcpy</code> 将 <code>src</code> 的内容复制到 <code>dest</code> 中，直到遇到空字符 <code>'\0'</code> 为止。</li>
-<li>注意：<code>strcpy</code> 不会检查目标数组是否足够大来容纳源字符串的内容，这可能导致缓冲区溢出。因此，在使用 <code>strcpy</code> 时，必须确保目标数组足够大，以免发生溢出。</li>
-</ul>
-</li>
-</ol>
-<p>示例：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">source</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;Hello, World!&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">destination</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl"><span class="nf">strcpy</span><span class="p">(</span><span class="n">destination</span><span class="p">,</span> <span class="n">source</span><span class="p">);</span>
-</span></span></code></pre></div><ol start="2">
-<li><code>strdup</code>（String Duplicate）:
-<ul>
-<li><code>strdup</code> 用于复制一个字符串，并为新字符串分配足够的内存空间。</li>
-<li><code>strdup</code> 并不是标准 C 函数，但它是一种常见的库函数，通常在 POSIX 环境中可用。</li>
-<li><code>strdup</code> 的原型通常为 <code>char* strdup(const char* str)</code>。</li>
-<li>它接受一个源字符串 <code>str</code>，并动态分配足够的内存来存储它，并将其内容复制到新分配的内存中。</li>
-<li>返回值是指向新字符串的指针，你需要负责在使用后释放这个内存，通常使用 <code>free</code> 函数。</li>
-</ul>
-</li>
-</ol>
-<p>示例：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">source</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;Hello, World!&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">char</span><span class="o">*</span> <span class="n">duplicate</span> <span class="o">=</span> <span class="nf">strdup</span><span class="p">(</span><span class="n">source</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// 使用 duplicate
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nf">free</span><span class="p">(</span><span class="n">duplicate</span><span class="p">);</span> <span class="c1">// 释放内存，以避免内存泄漏
-</span></span></span></code></pre></div><p>总结：</p>
-<ul>
-<li><code>strcpy</code> 用于在已分配的内存中复制字符串，需要手动分配目标数组的内存和确保足够大。</li>
-<li><code>strdup</code> 用于复制字符串并动态分配内存，更方便，但需要手动释放内存以避免内存泄漏。</li>
-</ul>
-<div id="1008-数组元素循环右移问题" class="anchor"></div>
-<h2 class="relative group">1008 数组元素循环右移问题 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1008-%e6%95%b0%e7%bb%84%e5%85%83%e7%b4%a0%e5%be%aa%e7%8e%af%e5%8f%b3%e7%a7%bb%e9%97%ae%e9%a2%98" aria-label="Anchor">#</a></span>        
-    
-</h2>
-<p>注意\(M\) 可能会大于\(N\)，即\(M=kN+a\)，\(M\)中大于\(N\)的\(kN\)部分只是循环，并无意义，
-令\(M \equiv M \mod N\)即可，接下来只要从数组的第\(M\)项存第一个数，\(n - m\)项之后开始在数组的第一位存数字</p>
-<ul>
-<li>c 语言版</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">q</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">m</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="n">m</span> <span class="o">%</span> <span class="n">n</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="o">-</span> <span class="n">m</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="n">a</span><span class="p">[</span><span class="n">m</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">m</span><span class="p">)]</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">q</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34; %d&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><ul>
-<li>rust版</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="n">io</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">new</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">io</span>::<span class="n">stdin</span><span class="p">().</span><span class="n">read_line</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">input</span><span class="p">).</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;Can&#39;t read line&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="n">trim</span><span class="p">().</span><span class="n">split_whitespace</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span>: <span class="kt">i32</span> <span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="n">next</span><span class="p">().</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;Error&#34;</span><span class="p">).</span><span class="n">parse</span><span class="p">().</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;Not a num&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">m</span>: <span class="kt">i32</span> <span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="n">next</span><span class="p">().</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;Error&#34;</span><span class="p">).</span><span class="n">parse</span><span class="p">().</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;Not a num&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">new</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">io</span>::<span class="n">stdin</span><span class="p">().</span><span class="n">read_line</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">input</span><span class="p">).</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;Can&#39;t read line&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">a</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">i32</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="n">trim</span><span class="p">()</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="n">split_whitespace</span><span class="p">()</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="n">map</span><span class="p">(</span><span class="o">|</span><span class="n">n</span><span class="o">|</span><span class="w"> </span><span class="n">n</span><span class="p">.</span><span class="n">parse</span><span class="p">().</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;Not a num!&#34;</span><span class="p">))</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="n">collect</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">len</span><span class="p">();</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">vec_move</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">split_off</span><span class="p">(</span><span class="n">len</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">usize</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">a</span><span class="p">.</span><span class="n">splice</span><span class="p">(</span><span class="mi">0</span><span class="o">..</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">vec_move</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">a</span><span class="p">.</span><span class="n">into_iter</span><span class="p">().</span><span class="n">enumerate</span><span class="p">().</span><span class="n">for_each</span><span class="p">(</span><span class="o">|</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="o">|</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="fm">print!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="fm">print!</span><span class="p">(</span><span class="s">&#34; </span><span class="si">{}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">})</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></div>
+<p>首先定义一个<code>MSG</code>变量，从Shell中获取当天日期添加到<code>MSG</code>中，当作 commit
+信息；然后在伪目标<code>all</code>中添加命令，先执行<code>hugo</code>，生成 public 文件，接着是两个简单的<code>if</code>判断，分别检测 Blog 仓库和生成的 public 仓库之下有没有需要添加的更改，
+如果有就 add 、commit、然后推送到远程并输出成功信息，如果没有停止并输出错误信息即可</p>
+<p><strong>注意：</strong><code>echo</code>中<code>\033[32m ... \033[0m</code>表示输出信息为绿色 ，<code>\033[31m ... \033[0m</code>表示输出信息为红色</p>
+
         </div>
                 
         
@@ -1088,8 +853,8 @@
       </div>
      
      <script>
-        var oid = "views_blog\/2023\/2023-11-6\/index.md"
-        var oid_likes = "likes_blog\/2023\/2023-11-6\/index.md"
+        var oid = "views_blog\/2023\/2023-11-29\/index.md"
+        var oid_likes = "likes_blog\/2023\/2023-11-29\/index.md"
       </script>
       
       
@@ -1108,7 +873,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/blog/markdown-style/">
+            <a class="flex group mr-3" href="/blog/PTA-1-20/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1120,11 +885,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >markdown样式测试</span
+                  >PTA 乙级1-20</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-10-04 15:29:32 &#43;0800 CST">2023-10-04</time>
+                    <time datetime="2023-11-06 23:48:11 &#43;0800 CST">2023-11-06</time>
                   
                 </span>
               </span>
@@ -1132,28 +897,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/blog/makefile-hugoblog/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >使用Makefile实现自动发布Hugo博客</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-11-29 22:16:57 &#43;0800 CST">2023-11-29</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

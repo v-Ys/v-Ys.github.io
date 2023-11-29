@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-    <lastBuildDate>Mon, 06 Nov 2023 23:48:11 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Nov 2023 22:16:57 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>make</title>
+      <link>/tags/make/</link>
+      <pubDate>Wed, 29 Nov 2023 22:16:57 +0800</pubDate>
+      
+      <guid>/tags/make/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>PTA</title>
       <link>/tags/pta/</link>
