@@ -4,24 +4,30 @@
 
   <url>
     <loc>/blog/</loc>
-    <lastmod>2023-11-29T22:16:57+08:00</lastmod>
+    <lastmod>2024-03-08T14:01:08+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>/blog/mac-config/</loc>
+    <lastmod>2024-03-08T14:01:08+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>/tags/</loc>
-    <lastmod>2023-11-29T22:16:57+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>/blog/makefile-hugoblog/</loc>
-    <lastmod>2023-11-29T22:16:57+08:00</lastmod>
+    <lastmod>2024-03-08T14:01:08+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>/</loc>
+    <lastmod>2024-03-08T14:01:08+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>/blog/makefile-hugoblog/</loc>
     <lastmod>2023-11-29T22:16:57+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

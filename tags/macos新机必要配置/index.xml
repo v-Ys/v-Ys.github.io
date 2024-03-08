@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MacOS新机必要配置 on 松TvT</title>
+    <link>//localhost:1313/tags/macos%E6%96%B0%E6%9C%BA%E5%BF%85%E8%A6%81%E9%85%8D%E7%BD%AE/</link>
+    <description>Recent content in MacOS新机必要配置 on 松TvT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+    <lastBuildDate>Fri, 08 Mar 2024 14:01:08 +0800</lastBuildDate><atom:link href="//localhost:1313/tags/macos%E6%96%B0%E6%9C%BA%E5%BF%85%E8%A6%81%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac config</title>
+      <link>//localhost:1313/blog/mac-config/</link>
+      <pubDate>Fri, 08 Mar 2024 14:01:08 +0800</pubDate>
+      
+      <guid>//localhost:1313/blog/mac-config/</guid>
+      <description>MacOS-config</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/blog/mac-config/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
