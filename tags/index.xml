@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-    <lastBuildDate>Fri, 08 Mar 2024 14:01:08 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Mar 2024 13:34:58 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scheme</title>
+      <link>/tags/scheme/</link>
+      <pubDate>Fri, 29 Mar 2024 13:34:58 +0800</pubDate>
+      
+      <guid>/tags/scheme/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>MacOS</title>
       <link>/tags/macos/</link>
