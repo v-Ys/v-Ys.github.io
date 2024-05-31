@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.197821cfa5763de850ba28450f18318f8af2511f416ea875694e2fd5daa35fe6b135b60a8df94c89b9e0afbac8224a2344381e22a130831f8fc00a2b0e01d0c1.css"
-    integrity="sha512-GXghz6V2PehQuihFDxgxj4ryUR9Bbqh1aU4v1dqjX&#43;axNbYKjflMibngr7rIIkojRDgeIqEwgx&#43;PwAorDgHQwQ==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.64d844305797c8b8102033666ba9406abf971852897a4d2a13e4746c03ac6e4f62f4036c83165968303e79c4fd418edc41ec8773220cf8d0ac5b99ee5fe5dd81.css"
+    integrity="sha512-ZNhEMFeXyLgQIDNma6lAar&#43;XGFKJek0qE&#43;R0bAOsbk9i9ANsgxZZaDA&#43;ecT9QY7cQeyHcyIM&#43;NCsW5nuX&#43;XdgQ==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -69,7 +69,7 @@
   <meta property="og:site_name" content="松TvT">
   <meta property="og:title" content="markdown样式测试">
   <meta property="og:description" content="markdown-style-test">
-  <meta property="og:locale" content="zh-cn">
+  <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
     <meta property="article:published_time" content="2023-10-04T15:29:32+08:00">
@@ -77,9 +77,11 @@
     <meta property="article:tag" content="Sundry">
     <meta property="og:image" content="/blog/markdown-style/featured.jpg">
 
+  
   <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="/blog/markdown-style/featured.jpg"><meta name="twitter:title" content="markdown样式测试">
-<meta name="twitter:description" content="markdown-style-test">
+  <meta name="twitter:image" content="/blog/markdown-style/featured.jpg">
+  <meta name="twitter:title" content="markdown样式测试">
+  <meta name="twitter:description" content="markdown-style-test">
 
   
   <script type="application/ld+json">
@@ -960,7 +962,7 @@
         h.each(function (i, e) {
           e = $(e);
           if (e.offset().top - $(window).height()/3 <= currentScroll) {
-            id = e.attr('id');
+            id = decodeURIComponent(e.attr('id'));
           }
         });
         var active = $toc.find('a.active');      
@@ -987,6 +989,7 @@
     }
   })();
 </script>
+
    </div>
       </div>
       
