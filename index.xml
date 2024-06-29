@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-    <lastBuildDate>Fri, 29 Mar 2024 13:34:58 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jun 2024 20:33:45 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>鼠须管 | Squirrel | Rime | 雾凇拼音 配置详解</title>
+      <link>/blog/rime/</link>
+      <pubDate>Sat, 29 Jun 2024 20:33:45 +0800</pubDate>
+      
+      <guid>/blog/rime/</guid>
+      <description>鼠须管 | Squirrel | Rime | 雾凇拼音 配置详解</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/blog/rime/featured.jpg" />
+    </item>
+    
     <item>
       <title>M1 Mac 配置 Scheme｜racket 环境</title>
       <link>/blog/mac-scheme-env/</link>
@@ -84,7 +94,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/now/</guid>
-      <description> Der Mensch kann zwar tun, was er will, aber er kann nicht wollen, was er will —— Arthur Schopenhauer TODO # 会好起来的:( </description>
+      <description> Der Mensch kann zwar tun, was er will, aber er kann nicht wollen, was er will —— Arthur Schopenhauer TODO # :( </description>
       
     </item>
     

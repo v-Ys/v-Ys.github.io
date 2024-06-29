@@ -4,24 +4,30 @@
 
   <url>
     <loc>/blog/</loc>
-    <lastmod>2024-03-29T13:34:58+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>/blog/mac-scheme-env/</loc>
-    <lastmod>2024-03-29T13:34:58+08:00</lastmod>
+    <lastmod>2024-06-29T20:33:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>/tags/</loc>
-    <lastmod>2024-03-29T13:34:58+08:00</lastmod>
+    <lastmod>2024-06-29T20:33:45+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>/blog/rime/</loc>
+    <lastmod>2024-06-29T20:33:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>/</loc>
+    <lastmod>2024-06-29T20:33:45+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>/blog/mac-scheme-env/</loc>
     <lastmod>2024-03-29T13:34:58+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
